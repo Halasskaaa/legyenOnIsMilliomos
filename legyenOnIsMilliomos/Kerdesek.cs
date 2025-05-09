@@ -14,12 +14,5 @@ namespace legyenOnIsMilliomos
 		// Kerdesek 1-15ig nehézseég szerint + 4 A-D opcionális válasz, és 3 különböző segéd
 
 		string kerdes;
-
-		public Kerdesek(string kerdes)
-		{
-			this.Kerdes = kerdes;
-		}
-
-		public string Kerdes { get => kerdes; set => kerdes = value; }
 	}
 }
