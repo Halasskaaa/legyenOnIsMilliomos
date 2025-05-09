@@ -8,12 +8,12 @@ namespace legyenOnIsMilliomos
 {
 	internal class Valaszok
 	{
-		char a;
-		char b;
-		char c;
-		char d;
+		string a;
+		string b;
+		string c;
+		string d;
 
-		public Valaszok(char a, char b, char c, char d)
+		public Valaszok(string a, string b, string c, string d)
 		{
 			this.a = a;
 			this.b = b;
@@ -21,22 +21,23 @@ namespace legyenOnIsMilliomos
 			this.d = d;
 		}
 
-		public char A { get => a; set => a = value; }
-		public char B { get => b; set => b = value; }
-		public char C { get => c; set => c = value; }
-		public char D { get => d; set => d = value; }
+		public string A { get => a; set => a = value; }
+		public string B { get => b; set => b = value; }
+		public string C { get => c; set => c = value; }
+		public string D { get => d; set => d = value; }
 	
 		public override string ToString()
 		{
 			return $"A {a} \t B {b} \nC {c} \t D {d}";
 		}
 
+
 		char[] helyesValasz = new char[]
 		{
 			'c',
 			'd',
 			'd',
-			'a', 
+			'a',
 			'b',
 			'c',
 			'a',
@@ -49,5 +50,7 @@ namespace legyenOnIsMilliomos
 			'a',
 			'c',
 		};
+
+
 	}
 }
