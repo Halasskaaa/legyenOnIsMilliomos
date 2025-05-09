@@ -4,7 +4,8 @@
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello, World!");
+			Jatekosok player = new Jatekosok("Feng Min", 21, "Female", "Professional gamer");
+
 		}
 	}
 }
