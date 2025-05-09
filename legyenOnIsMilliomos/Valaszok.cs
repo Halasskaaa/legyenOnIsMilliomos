@@ -30,5 +30,24 @@ namespace legyenOnIsMilliomos
 		{
 			return $"A {a} \t B {b} \nC {c} \t D {d}";
 		}
+
+		char[] helyesValasz = new char[]
+		{
+			'c',
+			'd',
+			'd',
+			'a', 
+			'b',
+			'c',
+			'a',
+			'a',
+			'b',
+			'd',
+			'b',
+			'c',
+			'd',
+			'a',
+			'c',
+		};
 	}
 }

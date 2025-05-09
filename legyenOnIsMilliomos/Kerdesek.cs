@@ -15,15 +15,11 @@ namespace legyenOnIsMilliomos
 
 		string kerdes;
 
-		public Kerdesek(string kerdes, string valasz)
+		public Kerdesek(string kerdes)
 		{
 			this.Kerdes = kerdes;
 		}
 
 		public string Kerdes { get => kerdes; set => kerdes = value; }
-		
-
-
-
 	}
 }
