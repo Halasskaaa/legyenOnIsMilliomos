@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace legyenOnIsMilliomos
 {
-	internal class PersonalDumpsterGround
+	internal class Segitseg
 	{
 
 		// https://refresher.hu/2893-REFRESHER-KVIZ-Te-helyesen-tudsz-valaszolni-a-Legyen-On-is-Milliomos-kerdeseire
