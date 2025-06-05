@@ -8,49 +8,29 @@ namespace legyenOnIsMilliomos
 {
 	internal class Valaszok
 	{
-		string a;
-		string b;
-		string c;
-		string d;
+		public string[] ValaszLista { get; set; }
 
-		public Valaszok(string a, string b, string c, string d)
+		public Valaszok(string a, string b, string c, string d) 
 		{
-			this.a = a;
-			this.b = b;
-			this.c = c;
-			this.d = d;
+			ValaszLista = new string[] { a, b, c, d };
 		}
 
-		public string A { get => a; set => a = value; }
-		public string B { get => b; set => b = value; }
-		public string C { get => c; set => c = value; }
-		public string D { get => d; set => d = value; }
-	
-		public override string ToString()
+		public void Megjelenit(char[] elerheto = null) 
 		{
-			return $"A {a} \t B {b} \nC {c} \t D {d}";
+			char[] betuk = { 'A', 'B', 'C', 'D' };
+			for (int i = 0; i < ValaszLista.Length; i++) 
+			{
+				if (elerheto == null || elerheto.Contains(betuk[i])) 
+				{
+					Console.WriteLine($"{betuk[i]}: {ValaszLista[i]}");
+				}
+			}
 		}
-
-
-		char[] helyesValasz = new char[]
+		
+		public string GetValasz(char betu) 
 		{
-			'c',
-			'd',
-			'd',
-			'a',
-			'b',
-			'c',
-			'a',
-			'a',
-			'b',
-			'd',
-			'b',
-			'c',
-			'd',
-			'a',
-			'c',
-		};
-
-
+			int index = betu - 'A';
+			return ValaszLista[index];
+		}
 	}
 }
