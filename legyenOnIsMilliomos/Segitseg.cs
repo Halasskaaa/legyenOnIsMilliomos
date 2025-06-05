@@ -8,7 +8,57 @@ namespace legyenOnIsMilliomos
 {
 	internal class Segitseg
 	{
+		public bool Kozonseg { get; private set; } = true;
 
+		public bool Felezo { get; private set; } = true;
+
+		public bool Telefon { get; private set; } = true;
+
+		public void Hasznal(string tipus, char helyes) 
+		{
+			switch (tipus.ToLower()) 
+			{
+				case "kozonseg":
+					if (!Kozonseg) { Console.WriteLine("Ezt már használtad!"); break; }
+					Console.WriteLine("A közönség 80%-a szerint a helyes válasz: " + helyes);				
+					Kozonseg = false;			
+					break;		
+					
+				case "felezo":				
+					if (!Felezo) { Console.WriteLine("Ezt már használtad!"); break; }				
+					Console.WriteLine("Két hibás válasz eltávolítva.");				
+					Felezo = false;				
+					break;
+			
+				case "telefon":				
+					if (!Telefon) { Console.WriteLine("Ezt már használtad!"); break; }
+					Console.WriteLine("A barátod azt mondja: talán a(z) " + helyes + " a helyes.");				
+					Telefon = false;			
+					break;
+				default:
+					Console.WriteLine("Érvénytelen segítség.");
+					break;	
+			}
+			
+		}
+		
+		public void MutatElerheto() 
+		{
+			Console.Write("Elérhető segítségek: ");
+			
+			if (Kozonseg) Console.Write("Közönség ");
+
+			if (Felezo) Console.Write("Felező ");
+
+			if (Telefon) Console.Write("Telefon ");
+
+			Console.WriteLine();
+		}
+
+
+
+
+		
 		// https://refresher.hu/2893-REFRESHER-KVIZ-Te-helyesen-tudsz-valaszolni-a-Legyen-On-is-Milliomos-kerdeseire
 		// https://www.google.com/search?q=legy%C3%A9l+te+is+milliomos+k%C3%A9rd%C3%A9sek+neh%C3%A9zs%C3%A9g+szerint&oq=legy%C3%A9l+te+is+milliomos+k%C3%A9rd%C3%A9sek+neh%C3%A9zs%C3%A9g+szerint&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABiABBiiBDIKCAIQABiABBiiBDIHCAMQABjvBTIKCAQQABiABBiiBDIKCAUQABiABBiiBNIBCDg2MzZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8
 
