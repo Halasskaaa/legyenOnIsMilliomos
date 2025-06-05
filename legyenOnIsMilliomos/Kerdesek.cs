@@ -8,7 +8,7 @@ namespace legyenOnIsMilliomos
 {
 	internal class Kerdesek
 	{
-		public string Kerdes { get; set; };
+		public string Kerdes { get; set; }
 
 		public Kerdesek(string kerdes)
 		{
