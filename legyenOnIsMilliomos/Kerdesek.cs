@@ -15,7 +15,7 @@ namespace legyenOnIsMilliomos
 			Kerdes = kerdes;
 		}
 
-		public override string 
+		public override string ToString()
 		{
 			return Kerdes;
 		}
