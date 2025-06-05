@@ -8,21 +8,17 @@ namespace legyenOnIsMilliomos
 {
 	internal class Kerdesek
 	{
-		string kerdes;
+		public string Kerdes { get; set; };
 
 		public Kerdesek(string kerdes)
 		{
-			this.kerdes = kerdes;
+			Kerdes = kerdes;
 		}
 
-		public string Kerdes { get => kerdes; set => kerdes = value; }
-
-
-
-
-
-
-
+		public override string 
+		{
+			return Kerdes;
+		}
 
 	}
 }
