@@ -50,7 +50,7 @@ namespace legyenOnIsMilliomos
 			answers.Add(new Valaszok("Batman", "Superman", "James Bond", "Sherlock Holmes"));
 			helyesValaszok.Add('C');
 			
-			questions.Add(new Kerdesek(Melyik szervünk termeli az adrenalint?""));
+			questions.Add(new Kerdesek("Melyik szervünk termeli az adrenalint?"));
 			answers.Add(new Valaszok("mellékvese", "pajzsmirigy", "hasnálmirigy", "hipotalamusz"));
 			helyesValaszok.Add('A');
 			
